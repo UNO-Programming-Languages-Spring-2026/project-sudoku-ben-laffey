@@ -23,7 +23,7 @@ sudoku(X, Y, N) :- initial(X, Y, N).
 
 
 subgrid(X, Y, G) :- X = 1..n*n, Y = 1..n*n, G = (((Y - 1) / n) + (((X - 1) / n) * n)) + 1.
-% Define the subgrids so that each subgrid is enumerated starting from the left to the right and progressing from the top to the bottom of the full sudoku grid
+% Define the subgrids so that each subgrid is enumerated starting from the top to the bottom and progressing from the left to the right of the full sudoku grid
 
 
 #show subgrid/3.
